@@ -1,0 +1,208 @@
+/* common styles start */
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+h1 {
+  font-size: 52px;
+  line-height: 1;
+}
+p {
+  font-size: 16px;
+}
+.btn {
+  display: inline-block;
+  margin-bottom: 10px;
+  background-color: #3b5bdb;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: 700;
+  color: white;
+  cursor: pointer;
+}
+/* common styles end */
+
+/* nav-section start */
+.logo {
+  font-weight: 700;
+  font-size: 24px;
+}
+ul {
+  display: flex;
+  justify-content: space-between;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu {
+  width: 40%;
+}
+/* nav-section end */
+/* top banner start */
+.top-banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+}
+.top-banner-info {
+  width: 50%;
+}
+.top-banner-img {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.top-banner-img img {
+  width: 70%;
+}
+/* top banner end */
+/* collection-section start */
+.collection-heading {
+  text-align: center;
+}
+.collections {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 50px;
+}
+.collection-details {
+  width: 329px;
+  height: 476px;
+  padding: 20px;
+}
+.collections img {
+  width: 300px;
+  height: 256px;
+}
+.collection-rating {
+  display: flex;
+}
+.rating {
+  margin-left: 10px;
+}
+/* collection-section end */
+/* contact-section start */
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+form {
+  background-color: #3b5bdb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+}
+input {
+  display: block;
+  text-align: center;
+  padding: 20px;
+  width: 50%;
+  border-radius: 5px;
+  font-size: 18px;
+  background-image: linear-gradient(45deg, #bac8ffa1, #748ffc75);
+  color: black;
+  font-weight: 700;
+  border: 0;
+}
+.contact h1 {
+  text-align: center;
+  color: white;
+}
+.contact-btn {
+  border: 2px solid white;
+  width: 50%;
+}
+
+/* contact-section end */
+/* footer-section start */
+footer {
+  background-color: black;
+  text-align: center;
+  color: white;
+  padding: 30px;
+  width: 100%;
+}
+footer ion-icon {
+  margin-right: 30px;
+  font-size: 20px;
+}
+/* footer-section end */
+/* Resposive-section start */
+/* mobile-view start */
+@media only screen and (max-width: 688px) {
+  .container {
+    width: 100%;
+    margin: 0;
+    margin-left: 0;
+  }
+  .menu {
+    display: none;
+  }
+  nav {
+    align-items: center;
+    justify-content: center;
+  }
+  .logo {
+    align-items: center;
+  }
+  .top-banner {
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+  }
+  .top-banner-img img {
+    width: 100%;
+  }
+  .collections {
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+  }
+  .collection-heading {
+    text-align: center;
+  }
+  .contact {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .form {
+    width: 100%;
+  }
+  footer {
+    width: 100%;
+  }
+}
+/* mobile-view end */
+/* tablet-view start*/
+@media only screen and (min-width: 689px) and (max-width: 992px) {
+  .container {
+    width: 100%;
+  }
+  .collections {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+}
